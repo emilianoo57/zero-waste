@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombre": "Panadería Artesanal",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqbArYRAtC4mgd02cVYDLoyTdgGeZt_bL6A&s",
+    "distancia": "5km",
+    "puntuacion": 4.8,
+    "descripcion": "Pan fresco hecho diariamente. Empanadas, medialunas y especialidades sin aditivos.",
+    "categoria": "Panadería"
+  },
+  {
+    "id": 2,
+    "nombre": "Carnicería Premium",
+    "imagen": "https://mercadoventas.es/wp-content/uploads/2023/10/CARNICERIA-MANCEBO1-1-1.jpg",
+    "distancia": "1km",
+    "puntuacion": 4.7,
+    "descripcion": "Cortes de carne de calidad superior. Asesoramiento especializado y atención personalizada.",
+    "categoria": "Carnicería"
+  },
+  {
+    "id": 3,
+    "nombre": "Verdulería Del Barrio",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfx2tQcHML9tJp899Z64f8h5fcBvq9GHkvBQ&s",
+    "distancia": "1km",
+    "puntuacion": 4.9,
+    "descripcion": "Frutas y verduras frescas sin empaques innecesarios. Productos de temporada.",
+    "categoria": "Verdulería"
+  },
+  {
+    "id": 4,
+    "nombre": "Confitería Dulce",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmo-9pbANUUm2ifWZCdvTFhnAbHUAXmnLInA&s",
+    "distancia": "5km",
+    "puntuacion": 4.9,
+    "descripcion": "Tortas personalizadas y postres gourmet con ingredientes naturales.",
+    "categoria": "Confitería"
+  },
+  {
+    "id": 5,
+    "nombre": "Pizzería Leña",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQBeZWvz7UxjFqEkCJh8cEuZDGNRIPkmGUA&s",
+    "distancia": "10km",
+    "puntuacion": 4.8,
+    "descripcion": "Pizzas al horno de leña con ingredientes orgánicos.",
+    "categoria": "Pizzería"
+  },
+
+
+  {
+    "id": 6,
+    "nombre": "Rotisería Casera",
+    "imagen": "https://media-cdn.tripadvisor.com/media/photo-s/0a/4a/e1/3f/rostiseria-la-cuineta.jpg",
+    "distancia": "20km",
+    "puntuacion": 4.6,
+    "descripcion": "Comidas caseras listas para llevar, preparadas con ingredientes frescos.",
+    "horarios": "Lun a Dom 11:00 - 22:00",
+    "direccion": "Av. Central 123",
+    "eco": true
+  },
+
+  {
+    "id": 7,
+    "nombre": "Heladería Natural",
+    "imagen": "https://www.alacarta.com.uy/wp-content/gallery/grot-helados-artesanales-y-naturales/alacarta-heladeria-grot-01.jpg",
+    "distancia": "10km",
+    "puntuacion": 4.9,
+    "descripcion": "Helados artesanales hechos con frutas naturales y sin conservantes.",
+    "horarios": "Lun a Dom 12:00 - 23:00",
+    "direccion": "Calle Dulce 456",
+    "eco": false
+  }
+]

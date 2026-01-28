@@ -1,0 +1,27 @@
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+        color: var(--color-texto);
+        padding: 8px 12px;
+        transition: background-color 0.3s, color 0.3s;
+        align-items: center;
+        display: flex;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: var(--color-primario);
+            color: white;
+        }
+      
+    &.activo {
+        background-color: var(--color-primario);
+        pointer-events: none;
+        color: white;
+    }
+   }
+  }

@@ -1,0 +1,79 @@
+:root {
+    --color-primario: #26d962;
+    --color-boton: #007e49;
+    --color-fondo: #f6f5f3;
+    --color-texto: #333333;
+   --text-muted: #777777;
+   --footer-bg: #222222;
+}
+
+.SearchFormSection {
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 40px 40px;
+background-color: var(--color-boton) ;
+border-radius: 50px;
+box-shadow: 1px 1px 3px 0.5px;
+height: 200px;
+justify-content: center;
+
+h2{
+    padding: 20px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+  .buscador{
+    display: flex;
+    width: 60%;
+    margin-bottom: 20px;
+
+     input {
+    padding: 8px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--color-texto);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    height: 60px;
+    background-color:var(--color-texto);
+    color: var(--color-fondo);
+
+    &:active {
+        border: none;
+    }
+    }
+
+    select {
+    margin-left: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: 1px solid var(--color-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    background-color: var(--color-texto);
+
+    &:hover{
+      background-color: var(--color-primario);
+      transition: 0.3s;
+      cursor: pointer;
+      color: white;
+    }
+
+    &:active {
+        border: none;
+    }
+
+    option {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--color-texto); 
+    }
+  }
+  }
+}

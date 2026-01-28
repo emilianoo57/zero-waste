@@ -1,0 +1,12 @@
+.HeroSection {
+
+    padding: 0px 20px;
+
+    h1 {
+     margin-bottom: 15px;
+    font-size: 50px;
+    max-width: 50%;
+   padding-top: 30px;
+    }
+
+}
