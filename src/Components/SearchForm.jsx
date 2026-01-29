@@ -1,27 +1,32 @@
 import { useId } from 'react'
-import styles from './SearchForm.module.css'
+import styles from './CssModules/SearchForm.module.css'
 
-export default function SearchForm () {
+export default function SearchForm ({onSearch, onTextChange}) {
 
 const searchInput = useId()
 const searchFiltro = useId()
 
 const HandleSumbit = (event) => {
     event.preventDefault()
-    const formData = new FormData(event.target)
+    const formData = new FormData(event.currentTarget)
 
     const filtros = {
-        search: formData.get(searchInput),
         distancia: formData.get(searchFiltro)
     }
-    console.log(filtros)
+    onSearch(filtros)
 }
+
+const handleTextChange = (event) => {
+    const text = event.target.value
+    onTextChange(text)
+}
+
     return (
         <>
     <section className={styles.SearchFormSection}>
             <h2>Busca Tus Comercios Favoritos</h2>
-        <form className={styles.buscador} onSubmit={HandleSumbit}>
-            <input type="text" id='text' name={searchInput} className="search-bar" placeholder="Buscar comercios..."></input>
+        <form className={styles.buscador} onChange={HandleSumbit}>
+            <input type="text" id='text' onChange={handleTextChange} name={searchInput} className="search-bar" placeholder="Buscar comercios..."></input>
 
             <select name={searchFiltro} id="filtros">
             <option value="">Distancia</option>

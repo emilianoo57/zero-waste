@@ -77,11 +77,6 @@ main {
     margin-bottom: 10px;
   }
 
-  .svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
-  }
 
   main > section:nth-child(1) p {
     color: var(--text-muted);
@@ -92,6 +87,7 @@ main {
   .productos, .comercios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: 300px;
   }
 
   .boton-card {

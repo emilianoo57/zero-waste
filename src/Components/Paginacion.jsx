@@ -1,4 +1,4 @@
-import styles from './Paginacion.module.css';
+import styles from './CssModules/Paginacion.module.css';
 export default function Paginacion ({ paginaActual, totalPaginas, onPageChange }) {   
     const pages = Array.from ({length: totalPaginas}, (_, i) => i + 1);
 

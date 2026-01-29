@@ -8,7 +8,6 @@
 }
 
 .header {
-    color: #222222;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 15px 20px;
     height: auto;
@@ -22,18 +21,26 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 
+    a {
+      text-decoration: none;
+      color: #222222;
+    }
     menu {
     display: flex;
     justify-content: end;
     
 
-    button {
+    a {
     margin-left: 15px;
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 40px;
     border: none;
     font: 1em sans-serif;
+    text-decoration: none;
+    color: var(--color-texto) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
     &:hover {
         background-color: var(--color-boton);
@@ -43,3 +50,9 @@
 }
   }
 }
+
+.svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
