@@ -3,9 +3,10 @@ import Footer from './Components/Footer.jsx'
 import Inicio from './Pages/Inicio.jsx'
 import Perfil from './Pages/Perfil.jsx'
 import NotFound from './Components/404.jsx'
+import useRouter from './Hooks/UseRouter.jsx'
 
 function App() {
-  const currentPath = window.location.pathname
+  const { currentPath } = useRouter()
   let page = <NotFound />
   if (currentPath === '/'){
     page = <Inicio />

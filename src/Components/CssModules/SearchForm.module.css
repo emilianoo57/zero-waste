@@ -1,11 +1,4 @@
-:root {
-    --color-primario: #26d962;
-    --color-boton: #007e49;
-    --color-fondo: #f6f5f3;
-    --color-texto: #333333;
-   --text-muted: #777777;
-   --footer-bg: #222222;
-}
+
 
 .SearchFormSection {
 display: flex;

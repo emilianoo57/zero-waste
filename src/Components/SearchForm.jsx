@@ -27,7 +27,7 @@ const handleTextChange = (event) => {
             <h2>Busca Tus Comercios Favoritos</h2>
         <form className={styles.buscador} onChange={HandleSumbit}>
             <input type="text" id='text' onChange={handleTextChange} name={searchInput} className="search-bar" placeholder="Buscar comercios..."></input>
-
+            
             <select name={searchFiltro} id="filtros">
             <option value="">Distancia</option>
             <option value="1km">1km</option>

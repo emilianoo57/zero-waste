@@ -1,8 +1,8 @@
 :root {
     --color-primario: #26d962;
     --color-boton: #007e49;
-    --color-fondo: #f6f5f3;
-    --color-texto: #333333;
+    --color-fondo: #141F1D;
+    --color-texto: #94A3A0;
    --text-muted: #777777;
    --footer-bg: #222222;
 }
@@ -37,14 +37,15 @@ main {
 }
 
 .comercio-item, .producto {
-    background-color: white;
+    background-color: var(--color-fondo);
     border-radius: 30px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     display: flex;
-    max-width: 100%;
     flex-direction: column;
+    width: 100%;    
+    max-width: 450px;       
     position: relative;
     overflow: hidden;
   
@@ -53,8 +54,8 @@ main {
       transition: box-shadow 0.3s, transform 0.3s;
 
       .img-card {
-        transform: scale(1.05);
-        transition: transform 0.3s;
+        transform: scale(1.03);
+        transition: transform 0.7s;
 
       }
     }
@@ -77,6 +78,11 @@ main {
     margin-bottom: 10px;
   }
 
+  .svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
 
   main > section:nth-child(1) p {
     color: var(--text-muted);
@@ -86,23 +92,26 @@ main {
 
   .productos, .comercios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     min-height: 300px;
+    justify-items: center;
+    gap: 1rem;
   }
 
   .boton-card {
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
     border: none;
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 15px;
+    width: 50%;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     font-weight: bold;
+     font-size: 1rem;
 
      &:hover {
     background-color: var(--color-primario);
@@ -116,7 +125,7 @@ main {
     box-shadow: 0px 0.5px 5px 0.5px;
     padding: 10px;
     width: 500px;
-    margin: 20px 400px;
+    margin: 20px 430px;
     display: flex;
     justify-content: center;
     border-radius: 20px ;

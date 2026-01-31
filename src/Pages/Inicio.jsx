@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../index.css'
 import data from '../../data.json'
 import productosData from '../../productos.json'
@@ -8,7 +8,7 @@ import ProductosListing from '../Components/ProductosListing.jsx'
 import HeroSection from '../Components/HeroSection.jsx'
 import SearchForm from '../Components/SearchForm.jsx'
 
-const Results_Per_Page = 4;
+const Results_Per_Page = 3;
 
 export default function Inicio() {
     const [paginaActual, setPaginaActual] = useState(1);
@@ -58,6 +58,11 @@ export default function Inicio() {
       setText(newText)
       setPaginaActual(1)
     }
+
+    useEffect(() => {
+        document.title = `resultados: ${cardsFiltradas.length}, pagina: ${paginaActual}`
+    }, [cardsFiltradas, paginaActual])
+
     return (
         <main>
           <HeroSection />
