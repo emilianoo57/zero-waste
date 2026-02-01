@@ -1,0 +1,55 @@
+:root {
+    --color-secundario: #023112;
+}
+
+.comerciosFormSection {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--color-fondo);
+  
+    h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--color-primario);
+      margin-bottom: 20px;
+    }
+  
+  input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 40%;
+    padding: 10px 15px;
+    border: 2px solid var(--color-primario);
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  
+      &:focus {
+        border-color: var(--color-secundario);
+      }
+}
+
+    form{ 
+      margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    button {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background-color: var(--color-primario);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: var(--color-secundario);
+      }
+    }
+
+  }
+}

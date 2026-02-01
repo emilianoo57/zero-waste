@@ -43,10 +43,10 @@ function RenderizarTarjetasProductos({productos}) {
     <>
 
         <article className="producto">
-                            <img src={productos.imagen} className="img-card" />
-                            <h5>{productos.nombre}</h5>
-                            <p className="precio">${productos.precio}</p>
-                            <p className="comercio-name"><small>{productos.comercio}</small></p>
+                            <img src={productos.image} className="img-card" />
+                            <h5>{productos.title}</h5>
+                            <p className="precio">${productos.price}</p>
+                            <p className="descripcion"><small>{productos.description}</small></p>
                             <button className={buttonClass} onClick={HandleApplyClick}>{buttonText}</button>
                     </article>
 

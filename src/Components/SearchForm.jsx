@@ -24,16 +24,16 @@ const handleTextChange = (event) => {
     return (
         <>
     <section className={styles.SearchFormSection}>
-            <h2>Busca Tus Comercios Favoritos</h2>
+            <h2>Busca Tus Productos Favoritos</h2>
         <form className={styles.buscador} onChange={HandleSumbit}>
             <input type="text" id='text' onChange={handleTextChange} name={searchInput} className="search-bar" placeholder="Buscar comercios..."></input>
             
             <select name={searchFiltro} id="filtros">
-            <option value="">Distancia</option>
-            <option value="1km">1km</option>
-            <option value="5km">5km</option>
-            <option value="10km">10km</option>
-            <option value="20km">20km</option>
+            <option value="">Categoria</option>
+            <option value="jewelery">joyeria</option>
+            <option value="electronics">electronicos</option>
+            <option value="women's clothing">ropa de mujer</option>
+            <option value="men's clothing">ropa de hombre</option>
             </select>
         </form>
      </section>

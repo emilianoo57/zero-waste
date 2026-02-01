@@ -20,9 +20,9 @@ function Nav () {
                         <h1 className={styles.logoText}>SavFood</h1>
                     </Link>
                     <nav className={styles.nav}>
-                        <a href='#' className={styles.navLink}>Colecciones</a>
+                        <Link href='/Comercios' className={styles.navLink}>Comercios</Link>
                         <a href='#' className={styles.navLink}>Impacto</a>
-                        <a href='#' className={styles.navLink}>Sobre Nosotros</a>
+                        <Link href='/Nosotros' className={styles.navLink}>Sobre Nosotros</Link>
                     </nav>
                 </div>
                 <div className={styles.rightSection}>

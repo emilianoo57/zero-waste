@@ -2,22 +2,19 @@ import Nav from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx' 
 import Inicio from './Pages/Inicio.jsx'
 import Perfil from './Pages/Perfil.jsx'
-import NotFound from './Components/404.jsx'
-import useRouter from './Hooks/UseRouter.jsx'
+import Nosotros from './Pages/Nosotros.jsx'
+import Route from './Components/Route.jsx'
+import ComerciosAfiliados from './Pages/Comercios.jsx'
 
 function App() {
-  const { currentPath } = useRouter()
-  let page = <NotFound />
-  if (currentPath === '/'){
-    page = <Inicio />
-  } else if (currentPath === '/Perfil') {
-    page = <Perfil />
-  }
 
     return (
       <>
         <Nav />
-        {page}
+        <Route path= "/" component={Inicio}/>
+        <Route path= "/Perfil" component={Perfil}/>
+        <Route path= "/Nosotros" component={Nosotros} />
+        <Route path= "/Comercios" component={ComerciosAfiliados} />
         <Footer />
       </>
     )

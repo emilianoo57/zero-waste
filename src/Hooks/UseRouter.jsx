@@ -14,8 +14,8 @@ export default function useRouter (){
         window.removeEventListener('popstate', HandleLocationChange)
     }
  }, [])
- function navigateTo (href) {
-  window.history.pushState({}, '', href)
+ function navigateTo (path) {
+  window.history.pushState({}, '', path)
     window.dispatchEvent(new PopStateEvent('popstate'))
  }
  return {
